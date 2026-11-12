@@ -1,0 +1,29 @@
+{
+  "dmgMountedReadOnly": true,
+  "applicationSymlinkPresent": true,
+  "freshDirectoryWithSpaces": true,
+  "resources": [
+    {
+      "asset": "jade",
+      "height": 1254,
+      "loaded": true,
+      "width": 1254
+    },
+    {
+      "asset": "copper",
+      "height": 1254,
+      "loaded": true,
+      "width": 1254
+    },
+    {
+      "asset": "app-icon",
+      "height": 1254,
+      "loaded": true,
+      "width": 1254
+    }
+  ],
+  "normalLaunchProcessConfirmed": true,
+  "testAppStopped": true,
+  "gatekeeperCleanFirstInstall": "not tested",
+  "verifierCorrection": "canonicalize /var and /private/var before process-path comparison"
+}
