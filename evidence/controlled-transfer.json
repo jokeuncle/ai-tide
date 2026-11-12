@@ -1,0 +1,6 @@
+{
+  "test": "real loopback transfer / production parser",
+  "payloadBytes": 2097152,
+  "observedReceivedDelta": 2097152,
+  "pass": true
+}

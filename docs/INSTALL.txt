@@ -1,0 +1,27 @@
+AI 潮汐 / AI Tide v0.1.0 — macOS 预览版
+
+系统要求：macOS 14 或更高版本。Universal 应用包含 Apple Silicon 与 Intel 架构；本次运行验收在 Apple Silicon / macOS 26 上完成，Intel 实机尚未测试。
+
+安装：
+1. 打开 DMG，将 AI Tide.app 拖到 Applications。
+2. 从 Applications 打开“潮汐”。应用带有 Dock、Finder 和应用切换器图标；菜单栏也有快捷入口。
+3. 启动 Codex App、Codex CLI / TUI 或原生 Claude Code，等候系统枚举及两次字节采样。
+4. “查看真实来源”展示 PID、已核验签名和实际读数。没有启动客户端时显示空态。
+
+本预览采用 ad-hoc 签名，尚未获得 Developer ID 签名或 Apple 公证。通过浏览器下载后，macOS 可能阻止首次打开。核对官网下载来源和 SHA256 后，可按 Apple 的单应用授权流程，在“系统设置 > 隐私与安全性”中为本应用选择“仍要打开”。不要关闭全局 Gatekeeper。如果系统报告恶意软件或文件已损坏，请停止并核对下载文件。
+
+无需安装 Python、Node、Swift、额外采集器、根证书或代理；不需要 sudo。nettop 是 macOS 自带的系统工具。终端构建才需要 Xcode Command Line Tools。
+
+读数含义：
+- 仅展示同一用户、签名白名单内原生进程的 TCP/UDP 系统字节计数，包含本地、后台与客户端至代理的连接。
+- Codex App / CLI 分进程采集。启动入口无法证明时明确显示“入口未确认”。
+- 首样本是基线；短命进程、采样间结束的连接和系统计数器重置可能漏计。本应用不是计费或完整流量审计工具。
+- 浏览器标签页、远程 SSH 内部任务、工具子进程和代理外网段不推测归属；旧 Node 运行时客户端不在当前原生签名白名单内。
+- 字节不等于 token、请求次数、模型思考、费用或会话内容。
+
+退出与卸载：
+使用菜单栏“退出”或 Command-Q，然后将 AI Tide.app 移到废纸篓。应用不修改网络配置、不安装系统扩展、不上传采集结果。诊断仅在你主动导出时写入选定文件。
+
+官网：https://harnessloom.com/ai-tide/
+开源：https://github.com/jokeuncle/ai-tide
+Apple 首次打开说明：https://support.apple.com/zh-cn/102445

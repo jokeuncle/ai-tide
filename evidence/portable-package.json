@@ -1,0 +1,27 @@
+{
+  "relocatedDirectoryHasSpacesAndUnicode": true,
+  "allResources": [
+    {
+      "asset": "jade",
+      "height": 1254,
+      "loaded": true,
+      "width": 1254
+    },
+    {
+      "asset": "copper",
+      "height": 1254,
+      "loaded": true,
+      "width": 1254
+    },
+    {
+      "asset": "app-icon",
+      "height": 1254,
+      "loaded": true,
+      "width": 1254
+    }
+  ],
+  "iconPresent": true,
+  "signatureVerified": true,
+  "developerBuildDirectoryUsed": false,
+  "architectures": "x86_64 arm64"
+}

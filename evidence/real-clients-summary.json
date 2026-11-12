@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-12T05:05:58Z",
+  "collector": "production SystemCollector; no proxy or decrypted payloads",
+  "samples": 34,
+  "collectionErrors": [],
+  "clients": [
+    {
+      "client": "claudeCode",
+      "pid": 69078,
+      "installed": true,
+      "signatureObserved": true,
+      "observedSamples": 22,
+      "signingIDs": [
+        "com.anthropic.claude-code"
+      ],
+      "teams": [
+        "Q6L2SF6YDW"
+      ],
+      "observedReceivedBytes": 6521,
+      "observedSentBytes": 15141,
+      "maxObservedProcessReceivedCounter": 9317,
+      "maxObservedProcessSentCounter": 15898,
+      "trafficObserved": true,
+      "requestSucceeded": true,
+      "exitCode": 0
+    },
+    {
+      "client": "codex",
+      "pid": 69079,
+      "installed": true,
+      "signatureObserved": true,
+      "observedSamples": 12,
+      "signingIDs": [
+        "codex"
+      ],
+      "teams": [
+        "2DC432GLL2"
+      ],
+      "observedReceivedBytes": 6502438,
+      "observedSentBytes": 888204,
+      "maxObservedProcessReceivedCounter": 8187847,
+      "maxObservedProcessSentCounter": 862176,
+      "trafficObserved": true,
+      "requestSucceeded": true,
+      "exitCode": 0
+    }
+  ],
+  "codexGUI": {
+    "signedHelperObserved": true,
+    "pids": [
+      84361,
+      84362,
+      84376,
+      84623,
+      84624,
+      89262
+    ],
+    "observedReceivedBytes": 2901,
+    "observedSentBytes": 14905,
+    "note": "Existing GUI process traffic; no claim of request-level attribution."
+  }
+}
