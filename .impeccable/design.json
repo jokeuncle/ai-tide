@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T06:40:59.864621+00:00",
+  "title": "Design System: AI 潮汐",
+  "extensions": {
+    "colorMeta": {
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "tonalRamp": [
+          "oklch(15.0% 0.0036 204.9)",
+          "oklch(26.4% 0.0036 204.9)",
+          "oklch(37.9% 0.0036 204.9)",
+          "oklch(49.3% 0.0036 204.9)",
+          "oklch(60.7% 0.0036 204.9)",
+          "oklch(72.1% 0.0036 204.9)",
+          "oklch(83.6% 0.0036 204.9)",
+          "oklch(95.0% 0.0036 204.9)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Warm off-white",
+        "tonalRamp": [
+          "oklch(15.0% 0.0105 91.5)",
+          "oklch(26.4% 0.0105 91.5)",
+          "oklch(37.9% 0.0105 91.5)",
+          "oklch(49.3% 0.0105 91.5)",
+          "oklch(60.7% 0.0105 91.5)",
+          "oklch(72.1% 0.0105 91.5)",
+          "oklch(83.6% 0.0105 91.5)",
+          "oklch(95.0% 0.0105 91.5)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Gray-green",
+        "tonalRamp": [
+          "oklch(15.0% 0.0093 174.2)",
+          "oklch(26.4% 0.0093 174.2)",
+          "oklch(37.9% 0.0093 174.2)",
+          "oklch(49.3% 0.0093 174.2)",
+          "oklch(60.7% 0.0093 174.2)",
+          "oklch(72.1% 0.0093 174.2)",
+          "oklch(83.6% 0.0093 174.2)",
+          "oklch(95.0% 0.0093 174.2)"
+        ]
+      },
+      "jade": {
+        "role": "primary",
+        "displayName": "Jade",
+        "tonalRamp": [
+          "oklch(15.0% 0.0761 159.4)",
+          "oklch(26.4% 0.0761 159.4)",
+          "oklch(37.9% 0.0761 159.4)",
+          "oklch(49.3% 0.0761 159.4)",
+          "oklch(60.7% 0.0761 159.4)",
+          "oklch(72.1% 0.0761 159.4)",
+          "oklch(83.6% 0.0761 159.4)",
+          "oklch(95.0% 0.0761 159.4)"
+        ]
+      },
+      "copper": {
+        "role": "secondary",
+        "displayName": "Copper",
+        "tonalRamp": [
+          "oklch(15.0% 0.1014 54.4)",
+          "oklch(26.4% 0.1014 54.4)",
+          "oklch(37.9% 0.1014 54.4)",
+          "oklch(49.3% 0.1014 54.4)",
+          "oklch(60.7% 0.1014 54.4)",
+          "oklch(72.1% 0.1014 54.4)",
+          "oklch(83.6% 0.1014 54.4)",
+          "oklch(95.0% 0.1014 54.4)"
+        ]
+      }
+    },
+    "motion": [
+      {
+        "name": "measured-stream",
+        "value": "24 fps maximum; intensity min(1, log1p(rate) / log1p(262144))",
+        "purpose": "Measured Canvas streams only; stopped for reduced motion, pause and zero activity."
+      }
+    ],
+    "shadows": [],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Native action preview",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Portable approximation of TideButtonStyle; native SwiftUI remains authoritative.",
+      "html": "<div class=\"ds-preview\"><button class=\"ds-button\">完成</button></div>",
+      "css": ".ds-preview{background:rgb(7.5% 8.4% 8.5%);color:rgb(94% 93% 90%);padding:20px;font-family:-apple-system,BlinkMacSystemFont,sans-serif}.ds-button{font:500 12px -apple-system,BlinkMacSystemFont,sans-serif;color:rgb(94% 93% 90%);background:#ffffff12;border:0.7px solid #ffffff1f;border-radius:7px;padding:8px 14px}.ds-button:hover{background:#ffffff1f}.ds-button:active{background:#ffffff26}.ds-button:focus-visible{outline:2px solid rgb(62% 85% 72%);outline-offset:3px}"
+    },
+    {
+      "name": "View selector preview",
+      "kind": "nav",
+      "refersTo": "segment-selected",
+      "description": "Tide and Timeline selection, represented without a framework runtime.",
+      "html": "<nav class=\"ds-preview ds-selector\" aria-label=\"视图\"><button class=\"ds-segment\" aria-pressed=\"true\">潮汐</button><button class=\"ds-segment\" aria-pressed=\"false\">时间线</button></nav>",
+      "css": ".ds-preview{background:rgb(7.5% 8.4% 8.5%);color:rgb(94% 93% 90%);padding:20px;font-family:-apple-system,BlinkMacSystemFont,sans-serif}.ds-selector{display:inline-flex;gap:3px}.ds-segment{width:73px;height:28px;border:0;border-radius:6px;background:transparent;color:rgb(66% 69% 68%);font:12px -apple-system,BlinkMacSystemFont,sans-serif}.ds-segment[aria-pressed=true]{background:#ffffff1a;color:rgb(94% 93% 90%);font-weight:600}.ds-segment:hover{background:#ffffff12}.ds-segment:focus-visible{outline:2px solid rgb(62% 85% 72%)}"
+    },
+    {
+      "name": "Measured rate preview",
+      "kind": "custom",
+      "description": "Static illustrative reading, not live network data.",
+      "html": "<div class=\"ds-preview ds-rate\"><span>↓</span> 1.7 KiB/s</div>",
+      "css": ".ds-preview{background:rgb(7.5% 8.4% 8.5%);color:rgb(94% 93% 90%);padding:20px;font-family:-apple-system,BlinkMacSystemFont,sans-serif}.ds-rate{font:17px SFMono-Regular,ui-monospace,monospace}.ds-rate span{color:rgb(62% 85% 72%)}"
+    },
+    {
+      "name": "Source row preview",
+      "kind": "custom",
+      "description": "Illustrative source row with no real process identity.",
+      "html": "<div class=\"ds-preview ds-source\"><span>PID —</span><strong>Codex</strong><span>等待系统采样</span></div>",
+      "css": ".ds-preview{background:rgb(7.5% 8.4% 8.5%);color:rgb(94% 93% 90%);padding:20px;font-family:-apple-system,BlinkMacSystemFont,sans-serif}.ds-source{display:flex;gap:24px;align-items:center;border-bottom:1px solid #ffffff14;font-size:11px}.ds-source strong{font-weight:500;color:rgb(62% 85% 72%)}"
+    },
+    {
+      "name": "Menu status preview",
+      "kind": "custom",
+      "description": "Compact text status, with unavailable rate retained as an em dash.",
+      "html": "<div class=\"ds-preview ds-mini\"><div><strong>Claude Code</strong><small>进程已核验 · 无可见连接</small></div><span>↓ —<br>↑ —</span></div>",
+      "css": ".ds-preview{background:rgb(7.5% 8.4% 8.5%);color:rgb(94% 93% 90%);padding:20px;font-family:-apple-system,BlinkMacSystemFont,sans-serif}.ds-mini{display:flex;align-items:center;justify-content:space-between;gap:24px;width:290px;font-size:11px}.ds-mini strong{font-weight:500}.ds-mini small{display:block;margin-top:4px;font-size:9px;color:rgb(66% 69% 68%)}.ds-mini>span{font-family:SFMono-Regular,ui-monospace,monospace;color:rgb(66% 69% 68%)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Jade and Copper Tides",
+    "overview": "A quiet native macOS instrument: two luminous material sculptures sit on graphite, with precise measurements and ruled traffic history below. The sculptures supply atmosphere; controls, text and charts stay restrained and legible. This captures the approved graphite/jade/copper direction as implemented in SwiftUI, rather than the earlier concept's approximate color values.",
+    "keyCharacteristics": [
+      "Native window behavior and SF typography.",
+      "Jade for Codex or ChatGPT; copper for Claude Code.",
+      "Spacious primary visualization with compact supporting measurements.",
+      "Visible source, state and coverage information."
+    ],
+    "rules": [
+      {
+        "name": "The Client Color Rule",
+        "body": "Keep client identity separate from traffic direction: both receive and send use the client's color; line style and arrow direction distinguish them. Do not introduce blue controls.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do preserve the jade/copper identity mapping across all native surfaces.",
+      "Do distinguish baseline collection, unavailable data, inactive process, no visible connection, pause and collection errors with text.",
+      "Do keep source and coverage limits visible in every live panel.",
+      "Do use measured rates for animation and support reduced motion."
+    ],
+    "donts": [
+      "Don't imply tokens, model thinking, costs or request counts from network bytes.",
+      "Don't draw activity particles for quiet or unavailable sources.",
+      "Don't replace native controls with blue accents or surround every reading with a card."
+    ]
+  }
+}
